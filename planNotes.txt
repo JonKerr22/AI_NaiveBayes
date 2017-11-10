@@ -1,2 +1,24 @@
 http://slazebni.cs.illinois.edu/fall17/assignment3.html
 assignment link ^
+
+part 1 idea:
+	basically going over training images to create "heat maps" of different digits 0-9, and then 
+	associate those heat maps with the given labels, these should be collective
+	over the course of the entire training, so combine them using math from assignment
+
+	confusion matrix: what's hot in the one heat map for a label that's also
+	hot in another, possibly confusing algorithm over which one to pick
+
+	odds ratios: which features of a particular label are most striking and 
+	stand out the most, what's the hottest part of the collective heat map
+	for a label means the pixels that are "on" most often for various pics
+	of that label, label just being digits for part 1
+
+	do not distinguish between '#' and '+', they are both just 1 for the
+	odds map
+
+part 2 idea:
+	almost the exact same as part 1, but instead of digits
+	we're looking at audio patterns to determine if they
+	are "yes" or "no" in Hebrew, audio patterns presented 
+	in text form too, so similar code will be used across both
